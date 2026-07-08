@@ -1,0 +1,34 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Cell Phenotype Classifier - Analysis Report</title>
+      <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.55; color: #17202a; max-width: 980px; }
+        h1 { margin-bottom: 0; }
+        .subtitle { color: #5d6d7e; margin-top: 6px; }
+        section { border-top: 1px solid #d8dee4; padding-top: 18px; margin-top: 24px; }
+        code { background: #f6f8fa; padding: 2px 5px; border-radius: 4px; }
+        figure { margin: 24px 0; }
+        img { max-width: 100%; border: 1px solid #d8dee4; }
+        figcaption { color: #5d6d7e; font-size: 0.92rem; margin-top: 6px; }
+      </style>
+    </head>
+    <body>
+      <h1>Cell Phenotype Classifier</h1>
+      <p class="subtitle">Bench to Bytes portfolio analysis report. Uses only public or synthetic data.</p>
+      <section><h2>Hypothesis</h2><p>A transfer-learning image classifier can distinguish broad cell phenotypes and use GradCAM-style inspection to check whether image regions are biologically meaningful.</p></section>
+      <section><h2>Data</h2><p>Public-data-ready project structure for Broad Bioimage Benchmark Collection datasets, with a synthetic manifest and demo metrics included for reproducibility.</p></section>
+      <section><h2>Process</h2><ol><li>Created an image manifest with phenotype and split labels.</li>
+<li>Stored demo classification metrics and a confusion matrix.</li>
+<li>Outlined a ResNet18 transfer-learning workflow.</li>
+<li>Prepared GradCAM interpretation placeholders for visual model review.</li></ol></section>
+      <section><h2>Outputs</h2><ul><li><code>data/image_manifest.csv</code></li>
+<li><code>outputs/model_metrics.csv</code></li>
+<li><code>outputs/confusion_matrix.csv</code></li>
+<li><code>figures/model_summary.svg</code></li></ul></section>
+      <section><h2>Interpretation</h2><p>The demo metrics show the reporting structure expected for a real BBBC experiment: accuracy alone is not enough, so confusion patterns and image-level explanations are part of the workflow.</p></section>
+      <section><h2>Figures</h2><figure><img src="../figures/model_summary.svg" alt="figures/model_summary.svg"><figcaption>figures/model_summary.svg</figcaption></figure></section>
+    </body>
+    </html>
