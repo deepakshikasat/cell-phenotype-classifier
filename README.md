@@ -1,38 +1,24 @@
 # Cell Phenotype Classifier
 
-    Transfer-learning project scaffold for fluorescence cell phenotype classification.
+This repo is now explicitly framed as a **BBBC-ready transfer-learning scaffold**, not a completed image model. It includes a manifest, expected outputs, confusion-matrix format, and GradCAM reporting placeholders. A real upgrade would download BBBC021/BBBC038 images and train ResNet18 or a smaller CNN locally.
 
-    ## Dataset
+## Reproduce
 
-    Public-data-ready structure for BBBC image datasets with synthetic manifest and demo metrics.
+```bash
+python scripts/run_pipeline.py
+```
 
-    ## Methods
+## Outputs
 
-    - Image manifest
-- ResNet18 training scaffold
-- Confusion matrix
-- GradCAM interpretation placeholders
-
-    ## Reproduce
-
-    ```bash
-    python scripts/run_pipeline.py
-    ```
-
-    ## Outputs
-
-    - `data/image_manifest.csv`
+- `data/image_manifest.csv`
 - `outputs/model_metrics.csv`
 - `outputs/confusion_matrix.csv`
 - `figures/model_summary.svg`
 
-    ## Analysis Report
+## Analysis Report
 
-    Open `reports/analysis_report.html` for the full hypothesis, data provenance,
-    process, outputs, and interpretation narrative.
+Open `reports/analysis_report.html` for the hypothesis, public data provenance, process, outputs, and interpretation.
 
-    ## Portfolio Note
+## Portfolio Note
 
-    This repository uses public or synthetic demonstration data only. It is
-    intended to show reproducible computational biology and AI/ML workflow
-    design without relying on confidential or employer-owned material.
+This repository uses public data sources or clearly labelled synthetic demonstration data only. No employer-owned or confidential data are included.
